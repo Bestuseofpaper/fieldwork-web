@@ -1,7 +1,7 @@
 const packageDescriptions = {
   starter: "An entry-level one-page site with this style’s colors, photos, and a simple way to get in touch.",
   standard: "The full demo layout with more room for services, photos, and a quote form.",
-  signature: "A custom opening layout, stronger photography, and a feature section that shows how the business works."
+  signature: "A custom opening layout, a moving photo backdrop, and a feature section that shows how the business works."
 };
 
 for (const card of document.querySelectorAll(".work-card")) {
@@ -43,6 +43,11 @@ if (preview) {
   preview.querySelector(".current-tier").textContent = `${plan.name} preview`;
   preview.querySelector(`[data-tier-link="${tier}"]`).setAttribute("aria-current", "page");
   preview.querySelector(".pick-preview").href = `./?style=${style}&tier=${tier}#your-choice`;
+
+  if (tier === "starter") {
+    const starter = document.querySelector("[data-starter]");
+    if (starter) starter.hidden = false;
+  }
 
   if (tier === "signature") {
     for (const section of document.querySelectorAll("[data-signature]")) {

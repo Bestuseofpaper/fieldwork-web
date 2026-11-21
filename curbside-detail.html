@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="./tier-mode.js?v=polish-1"></script>
-<link rel="stylesheet" href="./site.css?v=polish-1">
+<script src="./tier-mode.js?v=motion-1"></script>
+<link rel="stylesheet" href="./site.css?v=motion-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -21,6 +21,17 @@
   <a class="pick-preview" href="./?style=cinematic&amp;tier=standard#your-choice">Choose this package</a>
 </div>
 <main id="main">
+<section class="starter-hero" data-starter hidden>
+  <div class="shell starter-layout">
+    <div class="starter-intro">
+      <p class="eyebrow">Raleigh, Cary &amp; Apex</p>
+      <h1>Mobile detailing at your door.</h1>
+      <p>Interior cleaning, exterior washes, and full details at your home or office.</p>
+      <a class="button" href="#packages">See packages</a>
+    </div>
+    <img class="starter-photo" src="./wash.jpg" width="1600" height="1067" alt="Close-up of a vehicle being washed">
+  </div>
+</section>
 <section class="premium-hero" data-signature hidden>
   <div class="shell premium-hero-layout">
     <div class="premium-hero-copy">
@@ -49,6 +60,12 @@
     <p>Park somewhere safe and level. We bring the tools and handle the cleanup.</p>
   </div>
 </section>
+<section class="premium-panorama" data-signature hidden aria-labelledby="panorama-heading">
+  <img class="panorama-photo" src="./detail-foam.jpg" width="1600" height="1067" alt="" loading="lazy">
+  <div class="shell panorama-content">
+    <div><h2 id="panorama-heading">A finish you can see.</h2><p>Careful washing and paint protection for the car you drive every day.</p></div>
+  </div>
+</section>
 <section class="premium-editorial" data-signature hidden aria-label="Bold &amp; cinematic Signature feature">
   <div class="shell premium-editorial-layout">
     <figure class="premium-feature-image" data-premium-reveal>
@@ -75,6 +92,6 @@
 <div class="wide"><button class="button" type="submit">Preview request</button><p class="form-note">Demo only. Your entries stay on this page.</p></div>
 <p class="form-result wide" role="status" tabindex="-1" hidden></p>
 </form><div class="starter-only starter-contact" hidden><h3>Contact</h3><p>hello@curblinedetail.example</p><p class="form-note">Example email for this fictional business.</p></div></div></section>
-</main><footer class="shell site-footer"><strong>Curbline Mobile Detail</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js?v=polish-1" defer></script>
+</main><footer class="shell site-footer"><strong>Curbline Mobile Detail</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js?v=motion-1" defer></script>
 </body>
 </html>

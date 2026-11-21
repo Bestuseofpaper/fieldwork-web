@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-<script src="./tier-mode.js?v=polish-1"></script>
-<link rel="stylesheet" href="./site.css?v=polish-1">
+<script src="./tier-mode.js?v=motion-1"></script>
+<link rel="stylesheet" href="./site.css?v=motion-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -24,7 +24,18 @@
   <a class="pick-preview" href="./?style=friendly&amp;tier=standard#your-choice">Choose this package</a>
 </div>
 <main id="main">
-  <section class="premium-hero" data-signature hidden>
+  <section class="starter-hero" data-starter hidden>
+  <div class="shell starter-layout">
+    <div class="starter-intro">
+      <p class="eyebrow">Durham &amp; Chapel Hill</p>
+      <h1>A clean home, a little breathing room.</h1>
+      <p>Routine, deep, and move-out cleaning for the days you could use an extra hand.</p>
+      <a class="button" href="#clean-types">See cleaning options</a>
+    </div>
+    <img class="starter-photo" src="./clean-living.jpg" width="1600" height="1067" alt="A sunlit living room with a deep green sofa">
+  </div>
+</section>
+<section class="premium-hero" data-signature hidden>
   <div class="shell premium-hero-layout">
     <div class="premium-hero-copy">
       <p class="eyebrow">Home cleaning · Durham &amp; Chapel Hill</p>
@@ -51,7 +62,13 @@
       <article><div><h3>Move-out clean</h3><p>An empty-home clean with cabinet interiors and appliance add-ons by request.</p></div><a href="#clean-quote" data-service="Move-out clean">Select<span class="visually-hidden"> Move-out clean</span></a></article>
     </div>
   </section>
-  <section class="premium-editorial" id="how-dayroom-works" data-signature hidden aria-label="Bright &amp; friendly Signature feature">
+  <section class="premium-panorama" data-signature hidden aria-labelledby="panorama-heading">
+  <img class="panorama-photo" src="./clean-living.jpg" width="1600" height="1067" alt="" loading="lazy">
+  <div class="shell panorama-content">
+    <div><h2 id="panorama-heading">Come home to a reset.</h2><p>Choose the rooms that need the most attention and we’ll plan the clean around them.</p></div>
+  </div>
+</section>
+<section class="premium-editorial" id="how-dayroom-works" data-signature hidden aria-label="Bright &amp; friendly Signature feature">
   <div class="shell premium-editorial-layout">
     <figure class="premium-feature-image" data-premium-reveal>
       <img src="./clean-kitchen.jpg" alt="A sunlit kitchen with plants and clear counters" width="1600" height="1067" loading="lazy">
@@ -84,6 +101,6 @@
   </section>
 </main>
 <footer class="shell site-footer"><strong>Dayroom Home Cleaning</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer>
-<script src="./demo.js?v=polish-1" defer></script>
+<script src="./demo.js?v=motion-1" defer></script>
 </body>
 </html>
