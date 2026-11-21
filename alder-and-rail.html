@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="rail">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A fictional Outer Banks carpentry website by Fieldwork Web.">
+<title>Alder & Rail | Outer Banks Carpentry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar"><span>Fictional business demo</span><a href="./">Back to Fieldwork Web</a></div>
+<header class="shell site-header"><a class="wordmark" href="./alder-and-rail.html">Alder &amp; Rail <small>Carpentry &amp; Repair</small></a><nav aria-label="Main"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#estimate">Estimate</a></nav></header>
+<main id="main">
+<section class="shell rail-hero">
+<div class="rail-copy"><p class="eyebrow">Outer Banks, North Carolina</p><h1>Built for life<br><em>by the coast.</em></h1><p class="lede">Decks, exterior repairs, and finish carpentry for homes from Southern Shores to Nags Head.</p><a class="button" href="#estimate">Request an estimate</a></div>
+<figure><img src="./porch.jpg" width="1680" height="1000" alt="Timber deck and railing overlooking a landscaped backyard" fetchpriority="high"><figcaption>Outdoor living and deck carpentry</figcaption></figure>
+</section>
+<section class="rail-services" id="services"><div class="shell"><p class="eyebrow">What we do</p><h2>Repairs, rebuilds, and finishing work.</h2><div class="service-grid">
+<article><h3>Decks &amp; stairs</h3><p>Replace worn boards, rebuild steps, and repair railings so outdoor spaces are ready to use again.</p></article>
+<article><h3>Exterior repairs</h3><p>Address damaged trim, siding, and soft wood around doors, windows, and porches.</p></article>
+<article><h3>Finish carpentry</h3><p>Install interior trim and doors, with clean fits and details that suit the home.</p></article></div></div></section>
+<section class="shell rail-project" id="projects"><img src="./carpentry.jpg" width="1200" height="900" loading="lazy" alt="Carpenter cutting timber outdoors with a circular saw"><div><p class="eyebrow">Example project</p><h2>A safer set of porch stairs.</h2><p>For a weathered entry, the first step is checking where water collects and which pieces have softened. The scope might include new treads, a sturdier handrail, and trim that sheds water more easily.</p><p>Have a similar project in mind? Tell us what you’re seeing and where the home is located.</p></div></section>
+<section class="request" id="estimate"><div class="shell request-layout"><div><p class="eyebrow">Start a project</p><h2>Tell us what needs doing.</h2><p>We cover Southern Shores, Kitty Hawk, Kill Devil Hills, and Nags Head.</p></div><form class="inquiry" id="estimate-form">
+<label>Name<input name="name" autocomplete="name" required maxlength="80"></label>
+<label>Email<input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+<label>Project type<select name="service" required><option value="">Choose a service</option><option>Decks and stairs</option><option>Exterior repair</option><option>Finish carpentry</option><option>Other</option></select></label><label>Town<input name="location" autocomplete="address-level2" required maxlength="70"></label>
+<label class="wide">Anything we should know?<textarea name="details" rows="3" maxlength="500"></textarea></label>
+<div class="wide"><button class="button" type="submit">Preview request</button><p class="form-note">Demo only. Your entries stay on this page.</p></div>
+<p class="form-result wide" role="status" tabindex="-1" hidden></p>
+</form></div></section>
+</main><footer class="shell site-footer"><strong>Alder &amp; Rail Carpentry</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js" defer></script>
+</body>
+</html>
