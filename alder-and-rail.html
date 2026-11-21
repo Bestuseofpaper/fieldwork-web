@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="./tier-mode.js?v=packages-1"></script>
-<link rel="stylesheet" href="./site.css?v=packages-1">
+<script src="./tier-mode.js?v=polish-1"></script>
+<link rel="stylesheet" href="./site.css?v=polish-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -21,24 +21,41 @@
   <a class="pick-preview" href="./?style=grounded&amp;tier=standard#your-choice">Choose this package</a>
 </div>
 <main id="main">
-<section class="shell rail-hero">
+<section class="premium-hero" data-signature hidden>
+  <div class="shell premium-hero-layout">
+    <div class="premium-hero-copy">
+      <p class="eyebrow">Outer Banks carpentry</p>
+      <h1>Good woodwork.<br><em>Built to last.</em></h1>
+      <p class="lede">Thoughtful repairs and finish carpentry for homes that take the full force of the coast.</p>
+      <a class="button" href="#estimate">Plan your project</a>
+      <p class="premium-hero-line">Decks &amp; stairs · Exterior repairs · Finish carpentry</p>
+    </div>
+    <figure class="premium-hero-image"><img src="./signature-carpentry.jpg" alt="Hands working with timber and woodworking tools" width="1920" height="1280" loading="lazy"></figure>
+  </div>
+</section>
+<section class="shell rail-hero base-hero">
 <div class="rail-copy"><p class="eyebrow">Outer Banks, North Carolina</p><h1>Built for life<br><em>by the coast.</em></h1><p class="lede">Decks, exterior repairs, and finish carpentry for homes from Southern Shores to Nags Head.</p><a class="button" href="#estimate">Request an estimate</a></div>
 <figure><img src="./porch.jpg" width="1680" height="1000" alt="Timber deck and railing overlooking a landscaped backyard" fetchpriority="high"><figcaption>Outdoor living and deck carpentry</figcaption></figure>
 </section>
-<section class="signature-scene" hidden aria-label="Alder &amp; Rail Signature photo feature">
-  <div class="signature-frame">
-    <img class="signature-photo signature-photo-first" src="./porch.jpg" alt="" loading="lazy" width="1600" height="1067">
-    <img class="signature-photo signature-photo-second" src="./steps.jpg" alt="" loading="lazy" width="1600" height="1067">
-    <div class="signature-story">
-      <p class="eyebrow">Alder &amp; Rail</p><h2>Coastal carpentry, up close.</h2><p>From the shape of a whole deck to the finish on a single tread.</p>
-    </div>
-  </div>
-</section>
+
 <section class="rail-services" id="services"><div class="shell"><p class="eyebrow">What we do</p><h2>Repairs, rebuilds, and finishing work.</h2><div class="service-grid">
 <article><h3>Decks &amp; stairs</h3><p>Replace worn boards, rebuild steps, and repair railings so outdoor spaces are ready to use again.</p></article>
 <article><h3>Exterior repairs</h3><p>Address damaged trim, siding, and soft wood around doors, windows, and porches.</p></article>
 <article><h3>Finish carpentry</h3><p>Install interior trim and doors, with clean fits and details that suit the home.</p></article></div><a class="section-link expanded-only" href="./alder-services.html">See all services</a></div></section>
-<section class="shell rail-project expanded-only" id="projects"><img src="./carpentry.jpg" width="1200" height="900" loading="lazy" alt="Carpenter cutting timber outdoors with a circular saw"><div><p class="eyebrow">Example project</p><h2>A safer set of porch stairs.</h2><p>For a weathered entry, the first step is checking where water collects and which pieces have softened. The scope might include new treads, a sturdier handrail, and trim that sheds water more easily.</p><p>Have a similar project in mind? Tell us what you’re seeing and where the home is located.</p><a class="section-link expanded-only" href="./alder-projects.html">Explore sample projects</a></div></section>
+<section class="shell rail-project standard-feature" id="projects"><img src="./carpentry.jpg" width="1200" height="900" loading="lazy" alt="Carpenter cutting timber outdoors with a circular saw"><div><p class="eyebrow">Example project</p><h2>A safer set of porch stairs.</h2><p>For a weathered entry, the first step is checking where water collects and which pieces have softened. The scope might include new treads, a sturdier handrail, and trim that sheds water more easily.</p><p>Have a similar project in mind? Tell us what you’re seeing and where the home is located.</p><a class="section-link expanded-only" href="./alder-projects.html">Explore sample projects</a></div></section>
+<section class="premium-editorial" data-signature hidden aria-label="Warm &amp; grounded Signature feature">
+  <div class="shell premium-editorial-layout">
+    <figure class="premium-feature-image" data-premium-reveal>
+      <img src="./steps.jpg" alt="Wooden stairs and handrail leading to a backyard patio" width="1600" height="1067" loading="lazy">
+      <figcaption>Project example · Porch and stair repairs</figcaption>
+    </figure>
+    <div class="premium-editorial-copy" data-premium-reveal>
+      <h2>The work behind the finish.</h2>
+      <p>For worn decks and exposed entries, we start with what’s underneath. Sound framing, proper drainage, and careful joints make the visible work last longer.</p>
+      <dl><div><dt>Assess</dt><dd>Look for soft wood, movement, and where water collects.</dd></div><div><dt>Repair</dt><dd>Keep sound material and replace what has failed.</dd></div><div><dt>Finish</dt><dd>Match the surrounding details so the repair belongs.</dd></div></dl>
+    </div>
+  </div>
+</section>
 <section class="request" id="estimate"><div class="shell request-layout"><div><p class="eyebrow">Start a project</p><h2>Tell us what needs doing.</h2><p>We cover Southern Shores, Kitty Hawk, Kill Devil Hills, and Nags Head.</p></div><form class="inquiry" id="estimate-form">
 <label>Name<input name="name" autocomplete="name" required maxlength="80"></label>
 <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120"></label>
@@ -47,6 +64,6 @@
 <div class="wide"><button class="button" type="submit">Preview request</button><p class="form-note">Demo only. Your entries stay on this page.</p></div>
 <p class="form-result wide" role="status" tabindex="-1" hidden></p>
 </form><div class="starter-only starter-contact" hidden><h3>Contact</h3><p>hello@alderandrail.example</p><p class="form-note">Example email for this fictional business.</p></div></div></section>
-</main><footer class="shell site-footer"><strong>Alder &amp; Rail Carpentry</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js?v=packages-1" defer></script>
+</main><footer class="shell site-footer"><strong>Alder &amp; Rail Carpentry</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js?v=polish-1" defer></script>
 </body>
 </html>

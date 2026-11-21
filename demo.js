@@ -1,3 +1,28 @@
+const packageDescriptions = {
+  starter: "An entry-level one-page site with this style’s colors, photos, and a simple way to get in touch.",
+  standard: "The full demo layout with more room for services, photos, and a quote form.",
+  signature: "A custom opening layout, stronger photography, and a feature section that shows how the business works."
+};
+
+for (const card of document.querySelectorAll(".work-card")) {
+  const packages = card.querySelector(".tier-links");
+  const description = card.querySelector(".tier-description");
+  const link = card.querySelector(".preview-site");
+  if (!packages || !description || !link) continue;
+
+  const selectPackage = () => {
+    const selected = packages.querySelector("input:checked");
+    if (!selected) return;
+    const destination = new URL(link.href);
+    destination.searchParams.set("tier", selected.value);
+    link.href = destination.href;
+    description.textContent = packageDescriptions[selected.value];
+  };
+
+  packages.addEventListener("change", selectPackage);
+  selectPackage();
+}
+
 const plans = {
   starter: { name: "Starter", price: 50 },
   standard: { name: "Standard", price: 100 },
@@ -20,8 +45,24 @@ if (preview) {
   preview.querySelector(".pick-preview").href = `./?style=${style}&tier=${tier}#your-choice`;
 
   if (tier === "signature") {
-    const scene = document.querySelector(".signature-scene");
-    if (scene) scene.hidden = false;
+    for (const section of document.querySelectorAll("[data-signature]")) {
+      section.hidden = false;
+    }
+
+    if ("IntersectionObserver" in window && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.classList.remove("premium-reveal-pending");
+          observer.unobserve(entry.target);
+        }
+      });
+      for (const panel of document.querySelectorAll("[data-premium-reveal]")) {
+        if (panel.getBoundingClientRect().top < window.innerHeight) continue;
+        panel.classList.add("premium-reveal-pending");
+        observer.observe(panel);
+      }
+    }
 
     if (style === "grounded") {
       const carpentryPages = /^\.\/alder-(and-rail|services|projects)\.html(?:#.*)?$/;

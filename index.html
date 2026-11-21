@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./site.css?v=packages-1">
+<link rel="stylesheet" href="./site.css?v=polish-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,29 +23,50 @@
   </section>
   <section class="work" id="work">
     <div class="shell">
-      <div class="section-heading"><h2>Find the look that fits you.</h2><p>Each style comes in three packages. Open a preview to see what changes, then choose the one that fits your business.</p></div>
+      <div class="section-heading"><h2>Find the look that fits you.</h2><p>Choose a package under any style, then select Preview website to see it in action.</p></div>
       <div class="style-gallery">
         <div class="work-grid">
           <article class="work-card">
-            <a class="work-image rail-card" href="./alder-and-rail.html" aria-label="Open the Alder &amp; Rail Carpentry demo">
+            <div class="work-image rail-card">
               <img src="./porch.jpg" width="1680" height="1120" alt="A timber deck overlooking a landscaped backyard" decoding="async">
               <span>Alder &amp; Rail</span>
-            </a>
-            <div class="work-caption"><h3>Warm &amp; grounded</h3><p>Earth tones, generous project photography, and separate pages for services and project examples.</p><div class="tier-links" aria-label="Warm &amp; grounded package previews"><a href="./alder-and-rail.html?tier=starter" aria-label="Preview Warm &amp; grounded — Starter, from $50 USD"><span>Starter</span><strong>$50</strong></a><a href="./alder-and-rail.html?tier=standard" aria-label="Preview Warm &amp; grounded — Standard, from $100 USD"><span>Standard</span><strong>$100</strong></a><a href="./alder-and-rail.html?tier=signature" aria-label="Preview Warm &amp; grounded — Signature, from $120 USD"><span>Signature</span><strong>$120</strong></a></div></div>
+            </div>
+            <div class="work-caption"><h3>Warm &amp; grounded</h3><p>Earth tones, generous project photography, and separate pages for services and project examples.</p><fieldset class="tier-links">
+  <legend class="visually-hidden">Choose a Warm &amp; grounded package</legend>
+  <label><input type="radio" name="grounded-tier" value="starter"><span class="tier-option"><span>Starter</span><strong>$50</strong></span></label>
+  <label><input type="radio" name="grounded-tier" value="standard" checked><span class="tier-option"><span>Standard</span><strong>$100</strong></span></label>
+  <label><input type="radio" name="grounded-tier" value="signature"><span class="tier-option"><span>Signature</span><strong>$120</strong></span></label>
+</fieldset>
+<p class="tier-description" aria-live="polite">The full demo layout with more room for services, photos, and a quote form.</p>
+<a class="button preview-site" href="./alder-and-rail.html?tier=standard">Preview website<span class="visually-hidden">: Warm &amp; grounded</span></a></div>
           </article>
           <article class="work-card">
-            <a class="work-image detail-card" href="./curbside-detail.html" aria-label="Open the Curbline Mobile Detail demo">
+            <div class="work-image detail-card">
               <img src="./detail-foam.jpg" width="1600" height="1000" alt="A vehicle covered with soap foam" decoding="async">
               <span>Curbline<span class="accent">.</span></span>
-            </a>
-            <div class="work-caption"><h3>Bold &amp; cinematic</h3><p>Dark backgrounds, vivid lime accents, and photos that shift gently as you scroll.</p><div class="tier-links" aria-label="Bold &amp; cinematic package previews"><a href="./curbside-detail.html?tier=starter" aria-label="Preview Bold &amp; cinematic — Starter, from $50 USD"><span>Starter</span><strong>$50</strong></a><a href="./curbside-detail.html?tier=standard" aria-label="Preview Bold &amp; cinematic — Standard, from $100 USD"><span>Standard</span><strong>$100</strong></a><a href="./curbside-detail.html?tier=signature" aria-label="Preview Bold &amp; cinematic — Signature, from $120 USD"><span>Signature</span><strong>$120</strong></a></div></div>
+            </div>
+            <div class="work-caption"><h3>Bold &amp; cinematic</h3><p>Dark backgrounds, vivid lime accents, and photos that shift gently as you scroll.</p><fieldset class="tier-links">
+  <legend class="visually-hidden">Choose a Bold &amp; cinematic package</legend>
+  <label><input type="radio" name="cinematic-tier" value="starter"><span class="tier-option"><span>Starter</span><strong>$50</strong></span></label>
+  <label><input type="radio" name="cinematic-tier" value="standard" checked><span class="tier-option"><span>Standard</span><strong>$100</strong></span></label>
+  <label><input type="radio" name="cinematic-tier" value="signature"><span class="tier-option"><span>Signature</span><strong>$120</strong></span></label>
+</fieldset>
+<p class="tier-description" aria-live="polite">The full demo layout with more room for services, photos, and a quote form.</p>
+<a class="button preview-site" href="./curbside-detail.html?tier=standard">Preview website<span class="visually-hidden">: Bold &amp; cinematic</span></a></div>
           </article>
           <article class="work-card">
-            <a class="work-image clean-card" href="./dayroom-cleaning.html" aria-label="Open the Dayroom Home Cleaning demo">
+            <div class="work-image clean-card">
               <img src="./clean-living.jpg" width="1600" height="1000" alt="A sunny living room with a deep green sofa" decoding="async">
               <span>Dayroom<span class="clean-spark" aria-hidden="true">✦</span></span>
-            </a>
-            <div class="work-caption"><h3>Bright &amp; friendly</h3><p>Lavender and citrus colors, rounded shapes, and a simple path from services to a quote.</p><div class="tier-links" aria-label="Bright &amp; friendly package previews"><a href="./dayroom-cleaning.html?tier=starter" aria-label="Preview Bright &amp; friendly — Starter, from $50 USD"><span>Starter</span><strong>$50</strong></a><a href="./dayroom-cleaning.html?tier=standard" aria-label="Preview Bright &amp; friendly — Standard, from $100 USD"><span>Standard</span><strong>$100</strong></a><a href="./dayroom-cleaning.html?tier=signature" aria-label="Preview Bright &amp; friendly — Signature, from $120 USD"><span>Signature</span><strong>$120</strong></a></div></div>
+            </div>
+            <div class="work-caption"><h3>Bright &amp; friendly</h3><p>Lavender and citrus colors, rounded shapes, and a simple path from services to a quote.</p><fieldset class="tier-links">
+  <legend class="visually-hidden">Choose a Bright &amp; friendly package</legend>
+  <label><input type="radio" name="friendly-tier" value="starter"><span class="tier-option"><span>Starter</span><strong>$50</strong></span></label>
+  <label><input type="radio" name="friendly-tier" value="standard" checked><span class="tier-option"><span>Standard</span><strong>$100</strong></span></label>
+  <label><input type="radio" name="friendly-tier" value="signature"><span class="tier-option"><span>Signature</span><strong>$120</strong></span></label>
+</fieldset>
+<p class="tier-description" aria-live="polite">The full demo layout with more room for services, photos, and a quote form.</p>
+<a class="button preview-site" href="./dayroom-cleaning.html?tier=standard">Preview website<span class="visually-hidden">: Bright &amp; friendly</span></a></div>
           </article>
         </div>
         <div class="style-share" id="your-choice" data-email="douglas.james.pearson7@gmail.com" tabindex="-1" hidden>
@@ -59,9 +80,9 @@
 <section class="shell tier-guide" id="packages">
   <div class="section-heading"><h2>What each package includes</h2><p>Starting prices in USD for a one-time build.</p></div>
   <div class="tier-guide-grid">
-    <article><h3>Starter</h3><p class="tier-price">$50</p><p>A simple one-page site with your services, service area, and contact details.</p></article>
+    <article><h3>Starter</h3><p class="tier-price">$50</p><p>A streamlined one-page design with your style’s colors, photography, services, and contact details.</p></article>
     <article><h3>Standard</h3><p class="tier-price">$100</p><p>A custom layout in your chosen style, with project photos, a quote form, and separate pages where they help.</p></article>
-    <article class="signature-guide"><h3>Signature</h3><p class="tier-price">$120</p><p>Everything in Standard, with a full-screen photo feature, scroll transitions, and more time spent on the layout and visual details.</p></article>
+    <article class="signature-guide"><h3>Signature <span class="package-note">Most complete</span></h3><p class="tier-price">$120</p><p>Everything in Standard, with a custom opening layout, enhanced photography, and a feature section that tells customers how you work.</p></article>
   </div>
   <p class="tier-cost-note">Domain and hosting costs are separate.</p>
 </section>
@@ -75,6 +96,6 @@
 </div></section>
 </main>
 <footer class="shell site-footer"><strong>Fieldwork Web</strong><span>Portfolio and fictional business demos</span></footer>
-<script src="./demo.js?v=packages-1" defer></script>
+<script src="./demo.js?v=polish-1" defer></script>
 </body>
 </html>
