@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" class="clean">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A bright, illustrated home-cleaning website demo by Fieldwork Web.">
+<title>Dayroom | Home Cleaning in Durham</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar"><span>Fictional business demo</span><a href="./">Back to Fieldwork Web</a></div>
+<header class="shell site-header">
+  <a class="wordmark" href="./dayroom-cleaning.html"><span class="clean-spark" aria-hidden="true">✦</span> Dayroom <small>Home cleaning</small></a>
+  <nav aria-label="Main"><a href="#clean-types">Cleaning options</a><a href="#how-it-works">How it works</a><a href="#clean-quote">Get a quote</a></nav>
+</header>
+<main id="main">
+  <section class="clean-hero">
+    <div class="shell clean-hero-inner">
+      <div><p class="eyebrow">Durham &amp; Chapel Hill, NC</p><h1>A little more<br><em>room to breathe.</em></h1><p class="lede">Home cleaning for the hectic weeks, the big moves, and the everyday mess.</p><a class="button" href="#clean-types">Find your clean</a></div>
+      <figure><img src="./clean-living.jpg" width="1600" height="1067" alt="A sunlit sitting room with a deep green sofa and a wooden coffee table" fetchpriority="high"></figure>
+    </div>
+  </section>
+  <section class="shell clean-menu" id="clean-types">
+    <div><p class="eyebrow">Cleaning options</p><h2>What kind of reset do you need?</h2><p>Tell us how big your home is and what needs attention. We’ll confirm the scope before you book.</p></div>
+    <div class="clean-options">
+      <article><div><h3>Routine clean</h3><p>Floors, counters, bathrooms, and the surfaces you use every day.</p></div><a href="#clean-quote" data-service="Routine clean">Select<span class="visually-hidden"> Routine clean</span></a></article>
+      <article><div><h3>Deep clean</h3><p>Extra time for buildup, baseboards, and spots that are easy to miss.</p></div><a href="#clean-quote" data-service="Deep clean">Select<span class="visually-hidden"> Deep clean</span></a></article>
+      <article><div><h3>Move-out clean</h3><p>An empty-home clean with cabinet interiors and appliance add-ons by request.</p></div><a href="#clean-quote" data-service="Move-out clean">Select<span class="visually-hidden"> Move-out clean</span></a></article>
+    </div>
+  </section>
+  <section class="clean-process" id="how-it-works"><div class="shell clean-process-inner">
+    <img class="scroll-reveal" src="./clean-kitchen.jpg" width="1600" height="1067" loading="lazy" alt="Bright kitchen with natural light and plants">
+    <div><p class="eyebrow">How it works</p><h2>From your list to a clean home.</h2><ol><li><strong>Tell us about your space.</strong><p>Share the number of rooms and the areas you’d like us to focus on.</p></li><li><strong>Review your quote.</strong><p>We’ll send the scope and price and discuss access, pets, and parking.</p></li><li><strong>Pick a time.</strong><p>Choose a time that works for you. We bring the supplies.</p></li></ol></div>
+  </div></section>
+  <section class="request" id="clean-quote">
+    <div class="shell request-layout">
+      <div><p class="eyebrow">Request a quote</p><h2>Let’s talk about your space.</h2><p>Serving Durham, Chapel Hill, and Carrboro.</p></div>
+      <form class="inquiry">
+        <label>Name<input name="name" autocomplete="name" required maxlength="80"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+        <label>Cleaning type<select name="service" required><option value="">Choose a clean</option><option>Routine clean</option><option>Deep clean</option><option>Move-out clean</option></select></label>
+        <label>ZIP code<input name="location" autocomplete="postal-code" required maxlength="12"></label>
+        <label class="wide">Rooms and priorities<textarea name="details" rows="3" maxlength="500"></textarea></label>
+        <div class="wide"><button class="button" type="submit">Preview request</button><p class="form-note">Demo only. Your entries stay on this page.</p></div>
+        <p class="form-result wide" role="status" tabindex="-1" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="shell site-footer"><strong>Dayroom Home Cleaning</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer>
+<script src="./demo.js" defer></script>
+</body>
+</html>

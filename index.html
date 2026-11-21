@@ -3,30 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Small business websites with one-time builds and owner handoff. Explore two working demo websites.">
-<title>Fieldwork Web | Websites for local services</title>
+<meta name="description" content="Explore three website styles for local service businesses and save a favorite to share.">
+<title>Fieldwork Web | Website style gallery</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./site.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="shell site-header"><a class="wordmark" href="./" aria-label="Fieldwork Web home"><span class="mark" aria-hidden="true"></span>Fieldwork <b>Web</b></a><nav aria-label="Main"><a href="#work">Demo websites</a><a href="#build">What you get</a></nav></header>
+<header class="shell site-header">
+  <a class="wordmark" href="./" aria-label="Fieldwork Web home"><span class="mark" aria-hidden="true"></span>Fieldwork <b>Web</b></a>
+  <nav aria-label="Main"><a href="#work">Style gallery</a><a href="#build">What you get</a></nav>
+</header>
 <main id="main">
-<section class="shell portfolio-hero">
-<div class="portfolio-intro"><p class="eyebrow">Web design for local businesses</p><h1>Good work deserves<br>a <em>good website.</em></h1><p class="lede">Give customers one place to see what you do, where you work, and how to reach you.</p><a class="button" href="#work">Explore the demos</a></div>
-<div class="hero-aside"><span class="mark" aria-hidden="true"></span><p>One-time build.<br>Yours to keep.</p></div>
-</section>
-<section class="work" id="work"><div class="shell">
-<div class="section-heading"><h2>Take a look around.</h2><p>Two complete websites for fictional local businesses.</p></div>
-<div class="work-grid">
-<a class="work-card" href="./alder-and-rail.html"><div class="work-image rail-card"><img src="./porch.jpg" width="1680" height="1000" alt="A timber deck overlooking a landscaped backyard" decoding="async"><span>Alder &amp; Rail</span></div><div class="work-caption"><div><h3>Alder &amp; Rail Carpentry</h3><p>Project photos, services, and estimate requests.</p></div><span class="card-action">View website</span></div></a>
-<a class="work-card" href="./curbside-detail.html"><div class="work-image detail-card"><img src="./wash.jpg" width="1680" height="1000" alt="A close-up of a vehicle being washed" decoding="async"><span>Curbline<span class="accent">.</span></span></div><div class="work-caption"><div><h3>Curbline Mobile Detail</h3><p>Packages, starting prices, and a quote form.</p></div><span class="card-action">View website</span></div></a>
-</div></div></section>
-<section class="shell build" id="build"><div><p class="eyebrow">The handoff</p><h2>One link you can put to work.</h2></div><div><p>We build a mobile-friendly site around your services, your service area, and your own photos. Once it’s ready, you get the site and the keys to your own accounts.</p><p>If you got here from an email, reply to it and tell us what you’d want on your website.</p></div></section>
+  <section class="shell portfolio-hero">
+    <div class="portfolio-intro"><p class="eyebrow">Web design for local businesses</p><h1>Good work deserves<br>a <em>good website.</em></h1><p class="lede">Give customers one place to see what you do, where you work, and how to reach you.</p><a class="button" href="#work">Find your style</a></div>
+    <div class="hero-aside"><span class="mark" aria-hidden="true"></span><p>One-time build.<br>Yours to keep.</p></div>
+  </section>
+  <section class="work" id="work">
+    <div class="shell">
+      <div class="section-heading"><h2>Find the look that fits you.</h2><p>Open any demo, then pick a favorite. We can use any of these styles for your line of work.</p></div>
+      <form class="style-gallery" id="style-picker">
+        <fieldset class="work-grid">
+          <legend class="visually-hidden">Choose a website style</legend>
+          <article class="work-card">
+            <a class="work-image rail-card" href="./alder-and-rail.html" aria-label="Open the Alder &amp; Rail Carpentry demo">
+              <img src="./porch.jpg" width="1680" height="1120" alt="A timber deck overlooking a landscaped backyard" decoding="async">
+              <span>Alder &amp; Rail</span>
+            </a>
+            <div class="work-caption"><h3>Warm &amp; grounded</h3><p>Earth tones, generous project photography, and separate pages for services and project examples.</p><a class="card-action" href="./alder-and-rail.html">Explore carpentry demo</a><label class="style-choice"><input type="radio" name="style" value="Warm &amp; grounded"> Choose this style<span class="visually-hidden">: Warm &amp; grounded</span></label></div>
+          </article>
+          <article class="work-card">
+            <a class="work-image detail-card" href="./curbside-detail.html" aria-label="Open the Curbline Mobile Detail demo">
+              <img src="./detail-foam.jpg" width="1600" height="1000" alt="A vehicle covered with soap foam" decoding="async">
+              <span>Curbline<span class="accent">.</span></span>
+            </a>
+            <div class="work-caption"><h3>Bold &amp; cinematic</h3><p>Dark backgrounds, vivid lime accents, and photos that shift gently as you scroll.</p><a class="card-action" href="./curbside-detail.html">Explore detailing demo</a><label class="style-choice"><input type="radio" name="style" value="Bold &amp; cinematic"> Choose this style<span class="visually-hidden">: Bold &amp; cinematic</span></label></div>
+          </article>
+          <article class="work-card">
+            <a class="work-image clean-card" href="./dayroom-cleaning.html" aria-label="Open the Dayroom Home Cleaning demo">
+              <img src="./clean-living.jpg" width="1600" height="1000" alt="A sunny living room with a deep green sofa" decoding="async">
+              <span>Dayroom<span class="clean-spark" aria-hidden="true">✦</span></span>
+            </a>
+            <div class="work-caption"><h3>Bright &amp; friendly</h3><p>Lavender and citrus colors, rounded shapes, and a simple path from services to a quote.</p><a class="card-action" href="./dayroom-cleaning.html">Explore cleaning demo</a><label class="style-choice"><input type="radio" name="style" value="Bright &amp; friendly"> Choose this style<span class="visually-hidden">: Bright &amp; friendly</span></label></div>
+          </article>
+        </fieldset>
+        <div class="style-share" hidden>
+          <div><h3>Your pick</h3><p class="style-message"></p></div>
+          <button class="button" type="button">Copy my choice</button>
+          <p class="style-status" role="status"></p>
+        </div>
+        <noscript><p>Reply to our email with the name of your favorite style.</p></noscript>
+      </form>
+    </div>
+  </section>
+  <section class="shell build" id="build">
+    <div><p class="eyebrow">The handoff</p><h2>One link you can put to work.</h2></div>
+    <div><p>We build a mobile-friendly site around your services, your service area, and your own photos. Once it’s ready, you get the site and the keys to your own accounts.</p><p>Got here from an email? Reply with your favorite demo and what you’d want on your site.</p></div>
+  </section>
 </main>
 <footer class="shell site-footer"><strong>Fieldwork Web</strong><span>Portfolio and fictional business demos</span></footer>
+<script src="./demo.js" defer></script>
 </body>
 </html>
