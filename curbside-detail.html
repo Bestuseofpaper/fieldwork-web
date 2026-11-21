@@ -8,21 +8,36 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./site.css?v=styles-2">
+<script src="./tier-mode.js?v=packages-1"></script>
+<link rel="stylesheet" href="./site.css?v=packages-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="demo-bar"><span>Fictional business demo</span><a href="./">Back to Fieldwork Web</a></div>
-<header class="shell site-header"><a class="wordmark" href="./curbside-detail.html"><strong>Curbline<span class="accent">.</span></strong><small>Mobile detail</small></a><nav aria-label="Main"><a href="#packages">Packages</a><a href="#questions">FAQs</a><a href="#quote">Get a quote</a></nav></header>
+<header class="shell site-header"><a class="wordmark" href="./curbside-detail.html"><strong>Curbline<span class="accent">.</span></strong><small>Mobile detail</small></a><nav aria-label="Main"><a href="#packages">Packages</a><a href="#questions" class="expanded-only">FAQs</a><a href="#quote">Get a quote</a></nav></header>
+<div class="tier-preview shell" data-preview-style="cinematic">
+  <div class="tier-preview-label"><strong class="current-tier">Standard preview</strong><span>Fictional website</span></div>
+  <nav class="preview-options" aria-label="Website package previews"><a data-tier-link="starter" href="./curbside-detail.html?tier=starter">Starter</a><a data-tier-link="standard" href="./curbside-detail.html?tier=standard">Standard</a><a data-tier-link="signature" href="./curbside-detail.html?tier=signature">Signature</a></nav>
+  <a class="pick-preview" href="./?style=cinematic&amp;tier=standard#your-choice">Choose this package</a>
+</div>
 <main id="main">
 <section class="detail-hero"><img src="./wash.jpg" width="1680" height="1000" alt="" fetchpriority="high"><div class="shell"><p class="eyebrow">Mobile detailing in Raleigh, NC</p><h1>Fresh ride.<br><span class="accent">Same driveway.</span></h1><p class="lede">Interior and exterior detailing at your home or office in Raleigh, Cary, and Apex.</p><a class="button" href="#packages">See packages</a></div></section>
+<section class="signature-scene" hidden aria-label="Curbline Signature photo feature">
+  <div class="signature-frame">
+    <img class="signature-photo signature-photo-first" src="./detail-foam.jpg" alt="" loading="lazy" width="1600" height="1067">
+    <img class="signature-photo signature-photo-second" src="./interior.jpg" alt="" loading="lazy" width="1600" height="1067">
+    <div class="signature-story">
+      <p class="eyebrow">Curbline</p><h2>From wash to finish.</h2><p>A closer look at the care that goes into the outside and inside of a vehicle.</p>
+    </div>
+  </div>
+</section>
 <section class="shell packages" id="packages"><div class="section-heading"><div><p class="eyebrow">Detailing packages</p><h2>Pick your reset.</h2></div><p>Starting prices are for sedans. Vehicle size and condition can affect your quote.</p></div>
 <div class="service-grid">
 <article><h3>Interior Reset</h3><p>For crumbs, dusty trim, and a cabin that needs a fresh start.</p><p class="price"><small>From</small> $119</p><ul><li>Vacuum cabin and trunk</li><li>Wipe down trim and touchpoints</li><li>Clean mats and interior glass</li></ul><a class="button secondary" data-service="Interior Reset" href="#quote">Choose Interior Reset</a></article>
 <article class="featured"><h3>Full Detail</h3><p>Clean up the cabin and give the paint a fresh finish.</p><p class="price"><small>From</small> $199</p><ul><li>Everything in Interior Reset</li><li>Hand wash, wheels, and tires</li><li>Spray sealant and exterior glass</li></ul><a class="button" data-service="Full Detail" href="#quote">Choose Full Detail</a></article>
 <article><h3>Exterior Refresh</h3><p>For road grime, brake dust, and a finish that’s lost its shine.</p><p class="price"><small>From</small> $89</p><ul><li>Hand wash and towel dry</li><li>Clean wheels and tires</li><li>Apply spray sealant</li></ul><a class="button secondary" data-service="Exterior Refresh" href="#quote">Choose Exterior Refresh</a></article>
 </div></section>
-<section class="detail-motion" aria-labelledby="mobile-service">
+<section class="detail-motion expanded-only" aria-labelledby="mobile-service">
   <img src="./detail-foam.jpg" width="1600" height="1000" loading="lazy" alt="">
   <div class="shell">
     <p class="eyebrow">On-location detailing</p>
@@ -30,7 +45,7 @@
     <p>Park somewhere safe and level. We bring the tools and handle the cleanup.</p>
   </div>
 </section>
-<section class="detail-faq" id="questions"><div class="shell faq-layout"><img src="./interior.jpg" width="1200" height="900" loading="lazy" alt="Clean dashboard and steering wheel in a car interior"><div><p class="eyebrow">Before you book</p><h2>What to expect.</h2>
+<section class="detail-faq expanded-only" id="questions"><div class="shell faq-layout"><img src="./interior.jpg" width="1200" height="900" loading="lazy" alt="Clean dashboard and steering wheel in a car interior"><div><p class="eyebrow">Before you book</p><h2>What to expect.</h2>
 <details><summary>Where can you work?</summary><p>We need a safe, level place to park and room to open the doors. For shared lots, check with the property manager before booking.</p></details>
 <details><summary>How long will it take?</summary><p>Most jobs take about two to four hours. We’ll confirm a time window once we know the package, vehicle size, and condition.</p></details>
 <details><summary>What if it rains?</summary><p>We’ll check whether covered space is available or arrange another day.</p></details>
@@ -42,7 +57,7 @@
 <label class="wide">Anything we should know?<textarea name="details" rows="3" maxlength="500"></textarea></label>
 <div class="wide"><button class="button" type="submit">Preview request</button><p class="form-note">Demo only. Your entries stay on this page.</p></div>
 <p class="form-result wide" role="status" tabindex="-1" hidden></p>
-</form></div></section>
-</main><footer class="shell site-footer"><strong>Curbline Mobile Detail</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js?v=styles-2" defer></script>
+</form><div class="starter-only starter-contact" hidden><h3>Contact</h3><p>hello@curblinedetail.example</p><p class="form-note">Example email for this fictional business.</p></div></div></section>
+</main><footer class="shell site-footer"><strong>Curbline Mobile Detail</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer><script src="./demo.js?v=packages-1" defer></script>
 </body>
 </html>

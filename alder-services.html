@@ -8,12 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./site.css?v=styles-2">
+<script src="./tier-mode.js?v=packages-1"></script>
+<link rel="stylesheet" href="./site.css?v=packages-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="demo-bar"><span>Fictional business demo</span><a href="./">Back to Fieldwork Web</a></div>
 <header class="shell site-header"><a class="wordmark" href="./alder-and-rail.html">Alder &amp; Rail <small>Carpentry &amp; Repair</small></a><nav aria-label="Main"><a href="./alder-services.html" aria-current="page">Services</a><a href="./alder-projects.html">Projects</a><a href="./alder-and-rail.html#estimate">Estimate</a></nav></header>
+<div class="tier-preview shell" data-preview-style="grounded">
+  <div class="tier-preview-label"><strong class="current-tier">Standard preview</strong><span>Fictional website</span></div>
+  <nav class="preview-options" aria-label="Website package previews"><a data-tier-link="starter" href="./alder-and-rail.html?tier=starter">Starter</a><a data-tier-link="standard" href="./alder-and-rail.html?tier=standard">Standard</a><a data-tier-link="signature" href="./alder-and-rail.html?tier=signature">Signature</a></nav>
+  <a class="pick-preview" href="./?style=grounded&amp;tier=standard#your-choice">Choose this package</a>
+</div>
 <main id="main">
   <section class="shell rail-subhead">
     <div><p class="eyebrow">Carpentry services</p><h1>Repair what needs it.<br><em>Keep what works.</em></h1><p class="lede">Practical woodwork for exposed coastal homes, from the first loose porch tread to the last piece of interior trim.</p></div>
@@ -29,5 +35,6 @@
   <section class="shell rail-next"><h2>See what the work can look like.</h2><a class="button" href="./alder-projects.html">Explore sample projects</a></section>
 </main>
 <footer class="shell site-footer"><strong>Alder &amp; Rail Carpentry</strong><span>Fictional demo by <a href="./">Fieldwork Web</a></span></footer>
+<script src="./demo.js?v=packages-1" defer></script>
 </body>
 </html>

@@ -8,62 +8,73 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./site.css?v=styles-2">
+<link rel="stylesheet" href="./site.css?v=packages-1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="shell site-header">
-  <a class="wordmark" href="./" aria-label="Fieldwork Web home"><span class="mark" aria-hidden="true"></span>Fieldwork <b>Web</b></a>
-  <nav aria-label="Main"><a href="#work">Style gallery</a><a href="#build">What you get</a></nav>
+  <a class="wordmark" href="./" aria-label="Fieldwork Web home">Fieldwork Web</a>
+  <nav aria-label="Main"><a href="#work">Style gallery</a><a href="#packages">Packages</a><a href="#contact">Contact</a></nav>
 </header>
 <main id="main">
   <section class="shell portfolio-hero">
     <div class="portfolio-intro"><p class="eyebrow">Web design for local businesses</p><h1>Good work deserves<br>a <em>good website.</em></h1><p class="lede">Give customers one place to see what you do, where you work, and how to reach you.</p><a class="button" href="#work">Find your style</a></div>
-    <div class="hero-aside"><span class="mark" aria-hidden="true"></span><p>One-time build.<br>Yours to keep.</p></div>
+    <div class="hero-aside"><p>One-time build.<br>Yours to keep.</p></div>
   </section>
   <section class="work" id="work">
     <div class="shell">
-      <div class="section-heading"><h2>Find the look that fits you.</h2><p>Open any demo, then pick a favorite. We can use any of these styles for your line of work.</p></div>
-      <form class="style-gallery" id="style-picker">
-        <fieldset class="work-grid">
-          <legend class="visually-hidden">Choose a website style</legend>
+      <div class="section-heading"><h2>Find the look that fits you.</h2><p>Each style comes in three packages. Open a preview to see what changes, then choose the one that fits your business.</p></div>
+      <div class="style-gallery">
+        <div class="work-grid">
           <article class="work-card">
             <a class="work-image rail-card" href="./alder-and-rail.html" aria-label="Open the Alder &amp; Rail Carpentry demo">
               <img src="./porch.jpg" width="1680" height="1120" alt="A timber deck overlooking a landscaped backyard" decoding="async">
               <span>Alder &amp; Rail</span>
             </a>
-            <div class="work-caption"><h3>Warm &amp; grounded</h3><p>Earth tones, generous project photography, and separate pages for services and project examples.</p><a class="card-action" href="./alder-and-rail.html">Explore carpentry demo</a><label class="style-choice"><input type="radio" name="style" value="Warm &amp; grounded"> Choose this style<span class="visually-hidden">: Warm &amp; grounded</span></label></div>
+            <div class="work-caption"><h3>Warm &amp; grounded</h3><p>Earth tones, generous project photography, and separate pages for services and project examples.</p><div class="tier-links" aria-label="Warm &amp; grounded package previews"><a href="./alder-and-rail.html?tier=starter" aria-label="Preview Warm &amp; grounded — Starter, from $50 USD"><span>Starter</span><strong>$50</strong></a><a href="./alder-and-rail.html?tier=standard" aria-label="Preview Warm &amp; grounded — Standard, from $100 USD"><span>Standard</span><strong>$100</strong></a><a href="./alder-and-rail.html?tier=signature" aria-label="Preview Warm &amp; grounded — Signature, from $120 USD"><span>Signature</span><strong>$120</strong></a></div></div>
           </article>
           <article class="work-card">
             <a class="work-image detail-card" href="./curbside-detail.html" aria-label="Open the Curbline Mobile Detail demo">
               <img src="./detail-foam.jpg" width="1600" height="1000" alt="A vehicle covered with soap foam" decoding="async">
               <span>Curbline<span class="accent">.</span></span>
             </a>
-            <div class="work-caption"><h3>Bold &amp; cinematic</h3><p>Dark backgrounds, vivid lime accents, and photos that shift gently as you scroll.</p><a class="card-action" href="./curbside-detail.html">Explore detailing demo</a><label class="style-choice"><input type="radio" name="style" value="Bold &amp; cinematic"> Choose this style<span class="visually-hidden">: Bold &amp; cinematic</span></label></div>
+            <div class="work-caption"><h3>Bold &amp; cinematic</h3><p>Dark backgrounds, vivid lime accents, and photos that shift gently as you scroll.</p><div class="tier-links" aria-label="Bold &amp; cinematic package previews"><a href="./curbside-detail.html?tier=starter" aria-label="Preview Bold &amp; cinematic — Starter, from $50 USD"><span>Starter</span><strong>$50</strong></a><a href="./curbside-detail.html?tier=standard" aria-label="Preview Bold &amp; cinematic — Standard, from $100 USD"><span>Standard</span><strong>$100</strong></a><a href="./curbside-detail.html?tier=signature" aria-label="Preview Bold &amp; cinematic — Signature, from $120 USD"><span>Signature</span><strong>$120</strong></a></div></div>
           </article>
           <article class="work-card">
             <a class="work-image clean-card" href="./dayroom-cleaning.html" aria-label="Open the Dayroom Home Cleaning demo">
               <img src="./clean-living.jpg" width="1600" height="1000" alt="A sunny living room with a deep green sofa" decoding="async">
               <span>Dayroom<span class="clean-spark" aria-hidden="true">✦</span></span>
             </a>
-            <div class="work-caption"><h3>Bright &amp; friendly</h3><p>Lavender and citrus colors, rounded shapes, and a simple path from services to a quote.</p><a class="card-action" href="./dayroom-cleaning.html">Explore cleaning demo</a><label class="style-choice"><input type="radio" name="style" value="Bright &amp; friendly"> Choose this style<span class="visually-hidden">: Bright &amp; friendly</span></label></div>
+            <div class="work-caption"><h3>Bright &amp; friendly</h3><p>Lavender and citrus colors, rounded shapes, and a simple path from services to a quote.</p><div class="tier-links" aria-label="Bright &amp; friendly package previews"><a href="./dayroom-cleaning.html?tier=starter" aria-label="Preview Bright &amp; friendly — Starter, from $50 USD"><span>Starter</span><strong>$50</strong></a><a href="./dayroom-cleaning.html?tier=standard" aria-label="Preview Bright &amp; friendly — Standard, from $100 USD"><span>Standard</span><strong>$100</strong></a><a href="./dayroom-cleaning.html?tier=signature" aria-label="Preview Bright &amp; friendly — Signature, from $120 USD"><span>Signature</span><strong>$120</strong></a></div></div>
           </article>
-        </fieldset>
-        <div class="style-share" hidden>
+        </div>
+        <div class="style-share" id="your-choice" data-email="douglas.james.pearson7@gmail.com" tabindex="-1" hidden>
           <div><h3>Your pick</h3><p class="style-message"></p></div>
-          <button class="button" type="button">Copy my choice</button>
+          <div class="choice-actions"><button class="button" type="button">Copy my choice</button><a class="choice-email" href="#contact">Email this choice</a></div>
           <p class="style-status" role="status"></p>
         </div>
-        <noscript><p>Reply to our email with the name of your favorite style.</p></noscript>
-      </form>
+        </div>
     </div>
   </section>
+<section class="shell tier-guide" id="packages">
+  <div class="section-heading"><h2>What each package includes</h2><p>Starting prices in USD for a one-time build.</p></div>
+  <div class="tier-guide-grid">
+    <article><h3>Starter</h3><p class="tier-price">$50</p><p>A simple one-page site with your services, service area, and contact details.</p></article>
+    <article><h3>Standard</h3><p class="tier-price">$100</p><p>A custom layout in your chosen style, with project photos, a quote form, and separate pages where they help.</p></article>
+    <article class="signature-guide"><h3>Signature</h3><p class="tier-price">$120</p><p>Everything in Standard, with a full-screen photo feature, scroll transitions, and more time spent on the layout and visual details.</p></article>
+  </div>
+  <p class="tier-cost-note">Domain and hosting costs are separate.</p>
+</section>
   <section class="shell build" id="build">
     <div><p class="eyebrow">The handoff</p><h2>One link you can put to work.</h2></div>
-    <div><p>We build a mobile-friendly site around your services, your service area, and your own photos. Once it’s ready, you get the site and the keys to your own accounts.</p><p>Got here from an email? Reply with your favorite demo and what you’d want on your site.</p></div>
+    <div><p>We build a mobile-friendly site around your services, your service area, and your own photos. Once it’s ready, you get the site and the keys to your own accounts.</p><p>You can choose a package in any demo and email me your selection.</p></div>
   </section>
+<section class="portfolio-contact" id="contact"><div class="shell contact-inner">
+  <div><h2>Have a site in mind?</h2><p>Tell me what your business does and which style or package you like.</p></div>
+  <a class="button" href="mailto:douglas.james.pearson7@gmail.com?subject=Fieldwork%20Web%20inquiry">Email me about a website</a>
+</div></section>
 </main>
 <footer class="shell site-footer"><strong>Fieldwork Web</strong><span>Portfolio and fictional business demos</span></footer>
-<script src="./demo.js?v=styles-2" defer></script>
+<script src="./demo.js?v=packages-1" defer></script>
 </body>
 </html>
